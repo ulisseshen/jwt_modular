@@ -50,6 +50,7 @@ class _LoginPageState extends State<LoginPage> {
                         "https://ies.solutions/wordpress/wp-content/uploads/jwt.png",
                     height: 150,
                   ),
+                  const SizedBox(height: 16),
                   TextFormField(
                     autovalidateMode: AutovalidateMode.onUserInteraction,
                     keyboardType: TextInputType.emailAddress,

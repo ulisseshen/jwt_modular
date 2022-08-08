@@ -26,7 +26,17 @@ class _HomePageState extends State<HomePage> {
                 final response = await uno.get('/user');
                 print(response.data);
               },
-              child: Text("getUsers"))
+              child: Column(
+                children: [
+                  Text("getUsers"),
+                  CheckboxListTile(
+                    title: const Text('Animate Slowly'),
+                    onChanged: (bool? value) {},
+                    secondary: const Icon(Icons.hourglass_empty),
+                    value: false,
+                  )
+                ],
+              ))
         ]),
       ),
     );
